@@ -11,12 +11,6 @@ main {
     align-items: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 section {
     max-width: 65%;
     border-right: 2px solid black;
@@ -53,4 +47,10 @@ aside {
     flex-direction: column;
     gap: 20px;
     padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

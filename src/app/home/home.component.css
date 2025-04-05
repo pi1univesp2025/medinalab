@@ -9,6 +9,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 section {
@@ -29,7 +30,6 @@ section {
 section span {
     padding-top: 10px;
 }
-
 
 aside {
     max-width: 30%;
@@ -53,4 +53,28 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    section {
+        max-width: 100%;
+        border: none;
+    }
+
+    .section-container {
+        max-width: 100%;
+    }
+
+    aside {
+        max-width: 100%;
+    }
+
+    .aside-container {
+        max-width: 100%;
+    }
 }

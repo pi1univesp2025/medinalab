@@ -1,0 +1,57 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    width: 90%;
+    max-width: 465px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 40px;
+    background: linear-gradient(0deg, #F5F5F5 0%, #F5F5F5 100%), linear-gradient(0deg, #F5F5F5 0%, #F5F5F5 100%), #F5F5F5;
+}
+
+.login label {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.txt {
+    text-align: center;
+}
+
+input {
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), linear-gradient(0deg, #F5F5F5 0%, #F5F5F5 100%), #F5F5F5;
+}
+
+button {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #52894D;
+    color: white;
+    font-size: 100%;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+}
+
+button:hover {
+    background-color: #80d679;
+}

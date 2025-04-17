@@ -8,7 +8,8 @@ import { FooterComponent } from '../footer/footer.component';
   templateUrl: './team.component.html',
   styleUrl: './team.component.css'
 })
-export class TeamComponent {  
+export class TeamComponent {
+  // exemplo de uso  
     count: number[];
 
     constructor() {

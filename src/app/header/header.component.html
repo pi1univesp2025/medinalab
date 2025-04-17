@@ -1,21 +1,25 @@
 <header>
     <div class="logo">
-        <img src="assets/logo.jpg" alt="logo">
+        <a routerLink="/">
+            <img src="assets/logo.jpg" alt="logo">
+        </a>
     </div>
-    <nav
-        class="nav-bar"
-        [class.active]="menuOpen"
-        (click)="toggleMenu()"
-    >
-        <button class="hamburger"></button>
 
-        <div class="nav-list">            
-            <a routerLink="/" class="item">Home</a>
-            <a routerLink="/research" class="item" id="green-text">Research</a>
-            <a routerLink="/team" class="item">Our Team</a>
-            <a routerLink="/publications" class="item" id="green-text">Publications</a>
-            <a routerLink="/awards" class="item">Awards</a>
-            <a routerLink="/join" class="item" id="green-text">Join Us</a>
-        </div>
+    <button 
+        class="hamburger"
+        (click)="toggleMenu()"
+        [class.active]="menuOpen"
+    ></button>
+
+    <nav class="nav-bar" [class.active]="menuOpen">
+        <ul class="nav-list">
+            <li><a routerLink="/" class="item">Home</a></li>
+            <li><a routerLink="/research" class="item" id="green-text">Research</a></li>
+            <li><a routerLink="/team" class="item">Our Team</a></li>
+            <li><a routerLink="/publications" class="item" id="green-text">Publications</a></li>
+            <li><a routerLink="/awards" class="item">Awards</a></li>
+            <li><a routerLink="/join" class="item" id="green-text">Join Us</a></li>
+        </ul>
     </nav>  
 </header>
+<hr>

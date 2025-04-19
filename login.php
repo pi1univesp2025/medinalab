@@ -4,8 +4,16 @@ header('Content-Type: application/json');
 include 'db_conexao.php';
 $conexao = OpenCon();
 
-//http://projetop1medinalab.rf.gd/login.php?usuario=1&senha=1
-//http://projetop1medinalab.rf.gd/login.php?usuario=1&senha=2
+// As tabelas foram criadas no servidor de banco de dados.
+// Foi inserido um usuário com ID 1 na tabela 'login'.
+// A senha '1' foi cadastrada para o usuário de ID 1.
+// O objetivo desta página é validar o login do usuário ao acessar a página de login do projeto.
+// Quando o botão de login for clicado, esta página (login.php) será acionada para verificar se os dados estão corretos.
+// Se os dados estiverem corretos, o acesso ao site será liberado ("Acesso Liberado").
+// Caso contrário, será exibida uma mensagem informando que os dados estão incorretos ("Acesso Negado").
+// Exemplos de acesso:
+// http://projetop1medinalab.rf.gd/login.php?usuario=1&senha=1 --> Acesso Liberado
+// http://projetop1medinalab.rf.gd/login.php?usuario=1&senha=2 --> Acesso Negado
 
 //Recebendo os parâmetros
 $usuario = $_REQUEST['usuario'] ?? '';

@@ -4,6 +4,9 @@ header('Content-Type: application/json');
 include 'db_conexao.php';
 $conexao = OpenCon();
 
+//http://projetop1medinalab.rf.gd/login.php?usuario=1&senha=1
+//http://projetop1medinalab.rf.gd/login.php?usuario=1&senha=2
+
 //Recebendo os parâmetros
 $usuario = $_REQUEST['usuario'] ?? '';
 $senha = $_REQUEST['senha'] ?? '';

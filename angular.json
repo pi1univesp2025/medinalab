@@ -55,6 +55,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "buildTarget": "MedinaLab:build:production"
@@ -90,5 +93,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "963b9bac-d0a5-42d1-8a2b-e5c42336329d"
   }
 }

@@ -1,19 +1,17 @@
 <app-header />
-    <main>
-        <section>
-            <form action="/login" method="post">
-                <div class="login">
-                    <label for="user">
-                        <span class="txt">User:</span>
-                        <input type="text" name="user" id="user">
-                    </label>
-                    <label for="password">
-                        <span class="txt">Password:</span>
-                        <input type="password" name="password" id="password">
-                    </label>
-                    <button type="submit">Login</button>
-                </div>
-            </form>
-        </section>
-    </main>
+<main>
+  <section>
+    <div class="login">
+      <label for="user">
+        <span class="txt">User:</span>
+        <input type="text" [(ngModel)]="usuario" name="user" id="user">
+      </label>
+      <label for="password">
+        <span class="txt">Password:</span>
+        <input type="password" [(ngModel)]="senha" name="password" id="password">
+      </label>
+      <button (click)="fazerLogin()">Login</button>
+    </div>
+  </section>
+</main>
 <app-footer />

@@ -19,7 +19,6 @@ export class AdminComponent {
   usuario: string = '';
   senha: string = '';
 
-  //constructor(private http: HttpClient) {}
   private http = inject(HttpClient);
   private router = inject(Router);
 

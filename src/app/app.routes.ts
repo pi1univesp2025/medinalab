@@ -14,5 +14,5 @@ export const routes: Routes = [
     {path: "research", component: ResearchComponent},
     {path: "publications", component: PublicationsComponent},
     {path: "awards", component: AwardsComponent},
-    {path: "join", component: AdminComponent}
+    {path: "join", component: JoinComponent}
 ];

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { members } from './members';
 
 @Component({
   selector: 'app-team',
@@ -9,10 +10,9 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './team.component.css'
 })
 export class TeamComponent {
-  // exemplo de uso  
-    count: number[];
+    team: any;
 
     constructor() {
-      this.count = new Array(8);
+      this.team = members;
     }
 }

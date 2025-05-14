@@ -11,33 +11,41 @@
 .member {
     width: 35%;
     max-width: 250px;
-    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     font-size: medium;
+    gap: 10px;
+    padding: 10px;
 }
 
 .photo {
-    width: 80%;
-    height: 250px;
-}
-
-img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media(max-width: 600px) {
-    .member {
-        height: 200px;
-    }
+.photoimg {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-@media(max-width: 500px) {
-    .member {
-        width: 180px;
-    }
+.name {
+    font-weight: bolder;
+}
+
+.function {
+    font-weight: bold;
+}
+
+.lattes {
+    width: 100%;
+}
+
+.lattes span {
+    width: 100%;
+    word-wrap: break-word;
 }

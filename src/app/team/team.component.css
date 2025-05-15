@@ -8,6 +8,13 @@
     padding: 15px 15px;
 }
 
+.box1, .box2 {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
 .member {
     width: 35%;
     max-width: 250px;

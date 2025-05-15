@@ -1,15 +1,29 @@
 <app-header />
 
 <div class="container">
-    @for (t of team; track team.name) {
-        <div class="member">
-            <div class="photo"><img [src]="t.photo" alt="photo" class="photoimg"></div>
-            <span class="name">{{t.name}}</span>
-            <span class="function">{{t.function}}</span>
-            <a class="lattes" [href]="t.lattes"><span>{{t.lattes}}</span></a>
-            <span class="description">{{t.description}}</span>
-        </div>
-    }
+    <div class="box1">
+        @for (t of team; track $index) {
+            @if ($index <= 1) {
+                <div class="member">
+                    <div class="photo"><img [src]="t.photo" alt="photo" class="photoimg"></div>
+                    <span class="name">{{t.name}}</span>
+                    <span class="function">{{t.function}}</span>
+                </div>
+            }
+        }
+    </div>
+        
+    <div class="box2">
+        @for (t of team; track $index) {
+            @if ($index > 1) {
+                <div class="member">
+                    <div class="photo"><img [src]="t.photo" alt="photo" class="photoimg"></div>
+                    <span class="name">{{t.name}}</span>
+                    <span class="function">{{t.function}}</span>
+                </div>
+            }
+        }
+    </div>
 </div>
 
 <app-footer />

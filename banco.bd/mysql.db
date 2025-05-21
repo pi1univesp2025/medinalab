@@ -1,0 +1,73 @@
+create database bd_pi1;
+use bd_pi1;
+CREATE TABLE login (
+    id_user INT PRIMARY KEY not null,
+    user_a VARCHAR(150) not null,
+    key_user VARCHAR(100)
+);
+show create table login;
+
+CREATE TABLE about_us (
+    id_about_us INT PRIMARY KEY,
+    title VARCHAR(255),
+    image VARCHAR(255),
+    content TEXT
+);
+
+CREATE TABLE join_us (
+    id_join_us INT PRIMARY KEY,
+    title VARCHAR(255),
+    image VARCHAR(255),
+    content TEXT
+);
+
+CREATE TABLE Awards (
+    id_Awards INT PRIMARY KEY,
+    title VARCHAR(255),
+    image VARCHAR(255),
+    content TEXT
+);
+
+CREATE TABLE research (
+    id_research INT PRIMARY KEY,
+    title VARCHAR(255),
+    image VARCHAR(255),
+    content TEXT
+);
+
+CREATE TABLE our_team (
+    id_team INT PRIMARY KEY,
+    title VARCHAR(255),
+    image VARCHAR(255),
+    content TEXT
+);
+
+CREATE TABLE publications (
+    id_publications INT PRIMARY KEY,
+    title VARCHAR(255),
+    image VARCHAR(255),
+    content TEXT
+);
+
+CREATE TABLE projects (
+    id_proj INT PRIMARY KEY,
+    title VARCHAR(255),
+    image VARCHAR(255),
+    content TEXT
+);
+
+CREATE TABLE navegação (
+    id_pag INT PRIMARY KEY,
+    pag_name VARCHAR(255)
+);
+
+-- Estabelecendo os relacionamentos
+ALTER TABLE about_us ADD CONSTRAINT FK_about_us FOREIGN KEY (id_about_us) REFERENCES navegação(id_pag);
+ALTER TABLE join_us ADD CONSTRAINT FK_join_us FOREIGN KEY (id_join_us) REFERENCES navegação(id_pag);
+ALTER TABLE Awards ADD CONSTRAINT FK_Awards FOREIGN KEY (id_Awards) REFERENCES navegação(id_pag);
+ALTER TABLE research ADD CONSTRAINT FK_research FOREIGN KEY (id_research) REFERENCES navegação(id_pag);
+ALTER TABLE our_team ADD CONSTRAINT FK_team FOREIGN KEY (id_team) REFERENCES navegação(id_pag);
+ALTER TABLE publications ADD CONSTRAINT FK_publications FOREIGN KEY (id_publications) REFERENCES navegação(id_pag);
+ALTER TABLE projects ADD CONSTRAINT FK_projects FOREIGN KEY (id_proj) REFERENCES navegação(id_pag);
+
+show create database bd_pi1;

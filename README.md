@@ -10,7 +10,7 @@ Tecnologias usadas: HTML5, CSS 3, ANGULAR 19, PHP, MYSQL.
 
 # PARTES DO PROJETO
 
-[FRONT-END](banco.bd)
+[FRONT-END](src)
 
-[BACK-END E BANCO DE DADOS]()
+[BACK-END E BANCO DE DADOS](banco.bd)
 

@@ -8,6 +8,8 @@ Problema: O grupo de pesquisa Imuno-Oncologia Translacional enfrenta dificuldade
 
 Tecnologias usadas: HTML5, CSS 3, ANGULAR 19, PHP, MYSQL.
 
+Estudantes: Ailton Pereira Macedo, Gabriel Silva Caldeira, Jhonatan Souza Santos, Mayara Savergnini Martins, Pedro Henrique Barbosa Pereira, Sarah Rodrigues dos Santos Kolesnikova
+
 # PARTES DO PROJETO
 
 [FRONT-END](src)
